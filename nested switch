@@ -1,0 +1,100 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+         Scanner s=new Scanner(System.in);
+         System.out.println("Welcome to AsInTra");
+        System.out.println("1.CSE\n2.ECE\n3.MECH\n4.CIVIL");
+        System.out.println("Enter Department");
+        int dept=s.nextInt();
+        char e;
+        switch(dept){
+            case 1:
+                System.out.println("Go Straight");
+                System.out.println("Welcome to CSE Department");
+                System.out.println("a.Coding\nb.Web Designing\nc.Database");
+                System.out.println("Enter Event");
+                e=s.next().charAt(0);
+                switch(e){
+                    case 'a':
+                        System.out.println("Go to hall S108");
+                        break;
+                        case 'b':
+                        System.out.println("Go to hall S208");
+                        break;
+                        case 'c':
+                        System.out.println("Go to hall S206");
+                        break;
+                        default:
+                        System.out.println("No Event exist");
+                        
+                }
+                break;
+            case 2:
+                System.out.println("Go Right");
+                System.out.println("Welcome to ECE Department");
+                System.out.println("a.Project Expo\nb.PPT\nc.Circuit Debug");
+                System.out.println("Enter Event");
+                e=s.next().charAt(0);
+                switch(e){
+                    case 'a':
+                        System.out.println("Go to hall M108");
+                        break;
+                        case 'b':
+                        System.out.println("Go to hall M208");
+                        break;
+                        case 'c':
+                        System.out.println("Go to hall M206");
+                        break;
+                    default:
+                        System.out.println("No Event exist");
+                }
+                break;
+              case 3:
+                System.out.println("Go Left");
+                System.out.println("Welcome to MECH Department");
+                System.out.println("a.BottleRocketery\nb.PPT\nc.Mad 4 CAD");
+                System.out.println("Enter Event");
+                e=s.next().charAt(0);
+                switch(e){
+                    case 'a':
+                        System.out.println("Go to hall N108");
+                        break;
+                        case 'b':
+                        System.out.println("Go to hall N208");
+                        break;
+                        case 'c':
+                        System.out.println("Go to hall N206");
+                        break;
+                    default:
+                        System.out.println("No Event exist");
+                }
+                break;  
+                 case 4:
+                System.out.println("Go Straight and turn Left");
+                System.out.println("Welcome to CIVIL Department");
+                System.out.println("a.CADD Quest\nb.Brick Bonding\nc.Model Making");
+                System.out.println("Enter Event");
+                e=s.next().charAt(0);
+                switch(e){
+                    case 'a':
+                        System.out.println("Go to hall C108");
+                        break;
+                        case 'b':
+                        System.out.println("Go to hall C208");
+                        break;
+                        case 'c':
+                        System.out.println("Go to hall C206");
+                        break;
+                    default:
+                        System.out.println("No Event exist");
+                }
+                break; 
+            default:
+                System.out.println("Wrong Input");
+        }
+    }
+}
